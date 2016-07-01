@@ -1,0 +1,19 @@
+---
+galaxy_info:
+  author: Dmitry Belyakov
+  description: This role should be used on Amazon EC2 instances to mount EFS (Elastic File System) volumes.
+  license: MIT
+  min_ansible_version: 1.2
+  platforms:
+  - name: Ubuntu
+   versions:
+   - trusty
+  categories:
+  - cloud
+  - cloud:ec2
+  - cloud:aws
+  - cloud:efs    
+  - system  
+dependencies: []
+
+  
