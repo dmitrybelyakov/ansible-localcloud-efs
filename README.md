@@ -1,4 +1,4 @@
-Role Name
+localcloud-efs
 =========
 
 This is a pretty straightforward role that is meant to be used on Amazon EC2  instances that wish to mount an EFS (Elastic File System) volume. 
