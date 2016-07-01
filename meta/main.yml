@@ -8,7 +8,7 @@ galaxy_info:
   - name: Ubuntu
     versions:
     - trusty
-  tags:
+  galaxy_tags:
   - cloud
   - cloud:ec2
   - system
