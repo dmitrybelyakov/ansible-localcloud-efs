@@ -1,0 +1,5 @@
+---
+box_user: root
+efs_id: False
+efs_mount_point: /efs_data
+aws_region: eu-west-1
