@@ -23,7 +23,7 @@ Elastic File System id. You get this one when you create a new filesystem in AWS
 Where your filesystem will be mounted to on the host. This defaults to /efs_data
 
 `aws_region`
-Your AWS regioun where this filesistem resides. Your filesystem and your EC2 instances must be in the same region. This will default to eu-west-1
+Your AWS region where this filesistem resides. Your filesystem and your EC2 instances must be in the same region. This will default to eu-west-1
 
 
 Dependencies
