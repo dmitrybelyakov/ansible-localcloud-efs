@@ -1,5 +1,6 @@
 ---
 box_user: root
+box_group: root
 efs_id: False
 efs_mount_point: /efs_data
 aws_region: eu-west-1
