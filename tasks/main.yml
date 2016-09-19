@@ -18,7 +18,7 @@
     when: ansible_version.major < 2 or (ansible_version.major == 2 and ansible_version.minor < 1)
 
   - name: Create EFS mount point
-    file: path='{{efs_mount_point}}' state=directory owner='{{box_user}}'
+    file: path='{{efs_mount_point}}' state=directory owner='{{box_user}}' group='{{box_group}}'
 
   - name: Query for EFS availability zone
     uri: url='http://169.254.169.254/latest/meta-data/placement/availability-zone' return_content=yes
