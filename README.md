@@ -14,7 +14,10 @@ Role Variables
 --------------
 
 `box_user`
-The user that will be the owner of mounted volume. The role assumes the user exists and will default to root.
+User that will be the owner of mounted volume. The role assumes user exists and will default to root.
+
+`box_group`
+Group that will be the owner of mounted volume. The role assumes group exists and will default to root.
 
 `efs_id`
 Elastic File System id. You get this one when you create a new filesystem in AWS
