@@ -6,7 +6,7 @@ This is a pretty straightforward role that is meant to be used on Amazon EC2  in
 Requirements
 ------------
 
-This role will asume that you have your EC2 instrance set up, and placed in correct security group, as well as that you have your EFS filesystem created and you have its Filesystem ID at hand. Please reffer to [EFS Getting STarted Guide](https://aws.amazon.com/efs/getting-started/) if you don't have either of these.
+This role will asume that you have your EC2 instrance set up, and placed in correct security group, as well as that you have your EFS filesystem created and you have its Filesystem ID at hand. Please reffer to [EFS Getting Started Guide](https://aws.amazon.com/efs/getting-started/) if you don't have either of these.
 
 
 
