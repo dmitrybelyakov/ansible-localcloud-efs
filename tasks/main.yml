@@ -26,8 +26,15 @@
 
   - name: Mount EFS volume
     mount:
-      name='{{efs_mount_point}}'
-      src='{{_availability_zone.content}}.{{efs_id}}.efs.{{aws_region}}.amazonaws.com:'
-      fstype=nfs4
-      opts='nfsvers=4.1'
-      state=mounted
+      name: '{{efs_mount_point}}'
+      src: '{{_availability_zone.content}}.{{efs_id}}.efs.{{aws_region}}.amazonaws.com:'
+      fstype: nfs4
+      opts: 'nfsvers=4.1'
+      state: mounted
+
+  - name: ensure chown on the mounted volume
+    file:
+      path: '{{efs_mount_point}}'
+      owner: '{{box_user}}'
+      group: '{{box_group}}'
+      mode: '{{efs_mount_permissions}}'

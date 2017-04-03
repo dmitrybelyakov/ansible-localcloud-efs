@@ -3,4 +3,5 @@ box_user: root
 box_group: root
 efs_id: False
 efs_mount_point: /efs_data
+efs_mount_permissions: 0644
 aws_region: eu-west-1
