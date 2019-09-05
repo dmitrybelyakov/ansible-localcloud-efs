@@ -11,7 +11,9 @@
 
  # install pip & httplib2 (only ansible <2.1)
   - name: Install pip
-    apt: pkg='python-pip' state=installed
+    apt: 
+      pkg: python-pip
+      state: present
     when: ansible_version.major < 2 or (ansible_version.major == 2 and ansible_version.minor < 1)
   - name: Install httplib2
     pip: name=httplib2
